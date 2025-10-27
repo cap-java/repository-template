@@ -24,6 +24,10 @@ In case you are the maintainer of a new SAP open source project, these are the s
 
 *Insert a short description what is required to get your project running...*
 
+## Tests
+
+*Insert a s short description how to run the test of your project.*
+
 ## Support, Feedback, Contributing
 
 This project is open to feature requests/suggestions, bug reports etc. via [GitHub issues](https://github.com/SAP/<your-project>/issues). Contribution and feedback are encouraged and always welcome. For more information about how to contribute, the project structure, as well as additional contribution information, see our [Contribution Guidelines](CONTRIBUTING.md).

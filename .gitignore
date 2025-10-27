@@ -1,0 +1,39 @@
+*.db
+*.sqlite
+connection.properties
+default-*.json
+.cdsrc-private.json
+gen/
+node_modules/
+target/
+dist/
+
+# NPM
+.npmrc
+
+# MTA
+*_mta_build_tmp
+*.mtar
+mta_archives/
+
+# Other
+.DS_Store
+*.orig
+*.log
+
+*.iml
+*.flattened-pom.xml
+
+# IDEs
+.vscode
+/.idea/
+
+# SAPUI5
+app/*/dist
+
+# VitePress
+_docs/.vitepress/cache
+
+**/edmx/
+.reloadtrigger
+schema*.sql
