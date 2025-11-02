@@ -53,7 +53,6 @@
     <build>
         <plugins>
             <!-- JAVA VERSION -->
-
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.14.0</version>
@@ -61,6 +60,27 @@
                     <release>${jdk.version}</release>
                     <encoding>UTF-8</encoding>
                 </configuration>
+            </plugin>
+            
+            <!-- CDS MAVEN PLUGIN -->
+            <plugin>
+                <groupId>com.sap.cds</groupId>
+                <artifactId>cds-maven-plugin</artifactId>
+                <version>${cds.services.version}</version>
+                <executions>
+                    <execution>
+                        <id>cds.install-node</id>
+                        <goals>
+                            <goal>install-node</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>cds.resolve</id>
+                        <goals>
+                            <goal>resolve</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <!-- MAKE SPRING BOOT PLUGIN RUNNABLE FROM ROOT -->
             <plugin>

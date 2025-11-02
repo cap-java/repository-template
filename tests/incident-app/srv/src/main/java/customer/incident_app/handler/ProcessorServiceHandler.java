@@ -1,4 +1,4 @@
-package customer.incident_management.handler;
+package customer.incident_app.handler;
 
 import cds.gen.processorservice.Incidents;
 import cds.gen.processorservice.ProcessorService_;
@@ -53,7 +53,6 @@ public class ProcessorServiceHandler implements EventHandler {
         if (in.getStatusCode().equals("C")) {
             throw new ServiceException(ErrorStatuses.CONFLICT, "Can't modify a closed incident");
         }
-
     }
 
 }

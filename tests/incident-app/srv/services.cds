@@ -1,4 +1,5 @@
 using { sap.capire.incidents as my } from '../db/schema';
+// using from 'sap.capire.repository-template';
 
 /**
  * Service used by support personell, i.e. the incidents' 'processors'.
@@ -19,3 +20,7 @@ service AdminService {
 annotate ProcessorService.Incidents with @odata.draft.enabled; 
 annotate ProcessorService with @(requires: 'support');
 annotate AdminService with @(requires: 'admin');
+
+annotate my.Incidents with {
+  title @emoji
+};
