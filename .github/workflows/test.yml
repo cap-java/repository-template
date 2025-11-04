@@ -10,6 +10,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java-version: [17, 21]
+    name: Test (Java ${{ matrix.java-version }})
     
     steps:
     - name: Checkout code
@@ -18,14 +22,14 @@ jobs:
     - name: Test CAP Projects
       uses: ./.github/actions/test
       with:
-        java-version: '21'
+        java-version: ${{ matrix.java-version }}
         node-version: '22'
 
     - name: Upload test results
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: test-results
+        name: test-results-java-${{ matrix.java-version }}
         path: |
           **/target/surefire-reports/*.xml
           **/target/site/jacoco/
@@ -35,7 +39,7 @@ jobs:
       if: always()
       uses: dorny/test-reporter@v1
       with:
-        name: Maven Tests
+        name: Maven Tests (Java ${{ matrix.java-version }})
         path: '**/target/surefire-reports/TEST-*.xml'
         reporter: java-junit
         fail-on-error: true
