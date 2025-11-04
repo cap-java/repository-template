@@ -12,7 +12,6 @@ In case you are the maintainer of a new SAP open source project, these are the s
 - Add information about your project to this README (name, description, requirements etc). Especially take care for the <your-project> placeholders - those ones need to be replaced with your project name. See the sections below the horizontal line and [our guidelines on our wiki page](https://wiki.one.int.sap/wiki/pages/viewpage.action?pageId=3564976048#GuidelinesforGitHubHealthfiles(Readme,Contributing,CodeofConduct)-Readme.md) what is required and recommended.
 - Remove all content in this README above and including the horizontal line ;)
 
-***
 
 # Our new open source project
 
@@ -26,7 +25,46 @@ In case you are the maintainer of a new SAP open source project, these are the s
 
 ## Tests
 
-*Insert a s short description how to run the test of your project.*
+*Insert a short description how to run the test of your project.*
+
+
+### Testing the plugin in a sample application
+
+In `tests/incidents-app` you can find a sample application to test your plugin in a local CAP project. The template provides a sample for the emoji plugin. You can run the sample application as follows:
+
+**Add the emoji plugin to your repository**
+```zsh
+mvn install
+```
+
+**Go to sample app**
+```zsh
+cd tests/incidents-app
+```
+
+**Install Node dependencies**
+```zsh
+npm i
+```
+
+**Build the sample app**
+```
+mvn package
+```
+
+**Run the sample app**
+```zsh
+mvn cds:watch
+# or
+mvn spring-boot:run
+# or
+cds watch
+```
+
+**Test the sample app**
+```zsh
+mvn test
+```
 
 ## Support, Feedback, Contributing
 
