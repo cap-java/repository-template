@@ -1,0 +1,41 @@
+name: Test CAP Projects
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Test CAP Projects
+      uses: ./.github/actions/test
+      with:
+        java-version: '21'
+        node-version: '22'
+
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: |
+          **/target/surefire-reports/*.xml
+          **/target/site/jacoco/
+        retention-days: 30
+
+    - name: Publish test results
+      if: always()
+      uses: dorny/test-reporter@v1
+      with:
+        name: Maven Tests
+        path: '**/target/surefire-reports/TEST-*.xml'
+        reporter: java-junit
+        fail-on-error: true
