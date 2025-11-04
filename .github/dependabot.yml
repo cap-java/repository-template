@@ -3,6 +3,7 @@ updates:
   - package-ecosystem: maven
     directories:
       - "/"
+      - "/tests/incident-app"
     schedule:
       interval: daily
     open-pull-requests-limit: 10
@@ -10,6 +11,14 @@ updates:
     - dependency-name:  com.sap.cds:*
       versions:
       - ">=4"
+
+  - package-ecosystem: npm
+    directories:
+      - "/"
+      - "/tests/incident-app"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
 
   - package-ecosystem: github-actions
     directory: "/"
