@@ -12,9 +12,9 @@ This sample application showcases:
 
 ## Prerequisites
 
-- Java 21 or higher
+- Java 17 or higher
 - Maven 3.6.3 or higher
-- Node.js (for CDS development)
+- Node.js 20 or higher (for CDS development)
 
 ## Getting Started
 
