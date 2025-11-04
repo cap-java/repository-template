@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.sap.capire</groupId>
-    <artifactId>template-parent</artifactId>
+    <groupId>sap.capire</groupId>
+    <artifactId>emoji-template-parent</artifactId>
     <version>${revision}</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
@@ -35,16 +35,14 @@
   </dependencyManagement>
 
   <dependencies>
-    <dependency>
-      <groupId>com.sap.cds</groupId>
-      <artifactId>cds-feature-attachments</artifactId>
-    </dependency>
+    <!-- Add integration test dependencies here -->
   </dependencies>
 
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.1.3</version>
         <configuration>
           <skip>true</skip>
         </configuration>

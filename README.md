@@ -28,43 +28,29 @@ In case you are the maintainer of a new SAP open source project, these are the s
 *Insert a short description how to run the test of your project.*
 
 
-### Testing the plugin in a sample application
+### Testing the template with the sample application
 
-In `tests/incidents-app` you can find a sample application to test your plugin in a local CAP project. The template provides a sample for the emoji plugin. You can run the sample application as follows:
+In `samples/incident-app` you can find a complete sample application that demonstrates how to use this template in a real CAP Java project. The sample is now a standalone project that shows realistic usage patterns.
 
-**Add the emoji plugin to your repository**
+**Build and install the template**
 ```zsh
-mvn install
+mvn clean install
 ```
 
-**Go to sample app**
+**Run the sample application**
 ```zsh
-cd tests/incidents-app
-```
-
-**Install Node dependencies**
-```zsh
-npm i
-```
-
-**Build the sample app**
-```
-mvn package
-```
-
-**Run the sample app**
-```zsh
-mvn cds:watch
-# or
-mvn spring-boot:run
-# or
+cd samples/incident-app
+mvn clean package
 cds watch
 ```
 
-**Test the sample app**
-```zsh
-mvn test
-```
+The sample application includes:
+- Complete CAP service definitions
+- Java service handlers using the template
+- Fiori Elements UI
+- Sample data and tests
+
+For detailed instructions, see the [Sample Application README](samples/incident-app/README.md).
 
 ## Support, Feedback, Contributing
 

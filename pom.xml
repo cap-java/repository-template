@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>sap.capire</groupId>
-	<artifactId>repository-template-parent</artifactId>
+	<artifactId>emoji-template-parent</artifactId>
 	<version>${revision}</version>
 	<packaging>pom</packaging>
 
-	<name>repository-template parent</name>
+	<name>emoji-template parent</name>
 
 	<properties>
 		<!-- OUR VERSION -->
@@ -26,6 +26,7 @@
 
 	<modules>
 		<module>srv</module>
+		<module>tests/integration-tests</module>
 	</modules>
 
 	<dependencyManagement>

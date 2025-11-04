@@ -5,12 +5,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>incident_management_parent</artifactId>
+		<artifactId>incident-management-sample</artifactId>
 		<groupId>customer</groupId>
-		<version>${revision}</version>
+		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>incident_management</artifactId>
+	<artifactId>incident-management</artifactId>
 	<packaging>jar</packaging>
 
 	<name>incident_management</name>
@@ -65,8 +65,8 @@
 		
 		<dependency>
 			<groupId>sap.capire</groupId>
-			<artifactId>repository-template</artifactId>
-			<version>${revision}</version>
+			<artifactId>emoji-template</artifactId>
+			<version>${emoji.template.version}</version>
 		</dependency>
 	</dependencies>
 

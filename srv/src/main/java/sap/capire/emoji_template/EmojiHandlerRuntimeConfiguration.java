@@ -1,4 +1,4 @@
-package sap.capire.repository_template;
+package sap.capire.emoji_template;
 
 import com.sap.cds.services.runtime.CdsRuntimeConfiguration;
 import com.sap.cds.services.runtime.CdsRuntimeConfigurer;

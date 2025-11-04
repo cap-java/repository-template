@@ -1,4 +1,4 @@
-package sap.capire.repository_template;
+package sap.capire.emoji_template;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package sap.capire.repository_template;
+package sap.capire.emoji_template;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
