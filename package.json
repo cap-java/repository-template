@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@sap/cds-dk": "^9.3.2",
-    "eslint": "^9.39.0"
+    "@sap/eslint-plugin-cds": "^4",
+    "eslint": "^9"
   }
 }

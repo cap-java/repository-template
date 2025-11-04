@@ -5,6 +5,8 @@
   "license": "ISC",
   "repository": "<Add your repository here>",
   "devDependencies": {
-    "@sap/cds-dk": "^9.3.2"
+    "@sap/cds-dk": "^9.3.2",
+    "@sap/eslint-plugin-cds": "^4",
+    "eslint": "^9"
   }
 }
