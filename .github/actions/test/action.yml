@@ -26,15 +26,10 @@ runs:
         node-version: ${{ inputs.node-version }}
         cache: 'npm'
 
-    - name: Build and Install Emoji Plugin
+    - name: Build, Install and Test Emoji Plugin
       shell: bash
       run: |
-        mvn clean install -DskipTests=true -B -V
-
-    - name: Test Emoji Plugin
-      shell: bash
-      run: |
-        mvn test -B -V
+        mvn clean install -B -V
 
     - name: Test Incident App
       shell: bash
