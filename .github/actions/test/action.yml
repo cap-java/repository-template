@@ -33,12 +33,6 @@ runs:
 
     - name: Test Incident App
       shell: bash
-      working-directory: tests/incident-app
-      run: |
-        mvn test -B -V
-
-    - name: Test Integration Tests
-      shell: bash
-      working-directory: tests/integration-tests
+      working-directory: samples/incident-app
       run: |
         mvn test -B -V
