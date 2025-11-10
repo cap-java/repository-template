@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>emoji-template-parent</artifactId>
+		<artifactId>plugin-template-emoji-parent</artifactId>
 		<groupId>sap.capire</groupId>
 		<version>${revision}</version>
 	</parent>
@@ -13,7 +13,7 @@
 	<artifactId>plugin-template-emoji</artifactId>
 	<packaging>jar</packaging>
 
-	<name>repository-template</name>
+	<name>plugin template emoji</name>
 
 	<!-- ACTUAL DEPENDENCIES -->
 	<dependencies>

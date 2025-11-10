@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>sap.capire</groupId>
-	<artifactId>emoji-template-parent</artifactId>
+	<artifactId>plugin-template-emoji-parent</artifactId>
 	<version>${revision}</version>
 	<packaging>pom</packaging>
 

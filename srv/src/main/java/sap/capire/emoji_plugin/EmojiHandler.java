@@ -1,4 +1,4 @@
-package sap.capire.emoji_template;
+package sap.capire.emoji_plugin;
 
 import com.sap.cds.Result;
 import com.sap.cds.reflect.CdsElement;
