@@ -1,5 +1,5 @@
 name: 'Test Plugin and Sample'
-description: 'Tests emoji plugin, incident app, and integration tests'
+description: 'Tests emoji plugin, bookshop, and integration tests'
 inputs:
   java-version:
     description: 'Java version to use'
@@ -33,6 +33,6 @@ runs:
 
     - name: Test Incident App (Integration Tests)
       shell: bash
-      working-directory: samples/incident-app
+      working-directory: samples/bookshop
       run: |
         mvn test -B -V

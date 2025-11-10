@@ -30,7 +30,7 @@ In case you are the maintainer of a new SAP open source project, these are the s
 
 ### Testing the template with the sample application
 
-In `samples/incident-app` you can find a complete sample application that demonstrates how to use this template in a real CAP Java project. The sample is now a standalone project that shows realistic usage patterns.
+In `samples/bookshop` you can find a complete sample application that demonstrates how to use this template in a real CAP Java project. The sample is now a standalone project that shows realistic usage patterns.
 
 **Build and install the template**
 ```zsh
@@ -39,7 +39,7 @@ mvn clean install
 
 **Run the sample application**
 ```zsh
-cd samples/incident-app
+cd samples/bookshop
 mvn clean package
 cds watch
 ```

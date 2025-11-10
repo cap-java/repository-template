@@ -3,7 +3,7 @@ updates:
   - package-ecosystem: maven
     directories:
       - "/"
-      - "/tests/incident-app"
+      - "/tests/bookshop"
     schedule:
       interval: daily
     open-pull-requests-limit: 10
@@ -15,7 +15,7 @@ updates:
   - package-ecosystem: npm
     directories:
       - "/"
-      - "/tests/incident-app"
+      - "/tests/bookshop"
     schedule:
       interval: daily
     open-pull-requests-limit: 10
