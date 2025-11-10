@@ -50,7 +50,7 @@ The sample application includes:
 - Fiori Elements UI
 - Sample data and tests
 
-For detailed instructions, see the [Sample Application README](samples/incident-app/README.md).
+For detailed instructions, see the [Sample Application README](samples/bookshop/README.md).
 
 ## Support, Feedback, Contributing
 

@@ -31,7 +31,7 @@ runs:
       run: |
         mvn clean install -B -V
 
-    - name: Test Incident App (Integration Tests)
+    - name: Test Bookshop App (Integration Tests)
       shell: bash
       working-directory: samples/bookshop
       run: |

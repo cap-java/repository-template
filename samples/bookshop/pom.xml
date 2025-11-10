@@ -51,7 +51,7 @@
 			<dependency>
 				<groupId>sap.capire</groupId>
 				<artifactId>plugin-template-emoji</artifactId>
-				<version>1.0.0-Snapshot</version>
+				<version>1.0.0-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
