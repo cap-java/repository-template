@@ -4,12 +4,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>sap.capire</groupId>
-	<artifactId>emoji-template-parent</artifactId>
+	<groupId>customer</groupId>
+	<artifactId>bookshop-parent</artifactId>
 	<version>${revision}</version>
 	<packaging>pom</packaging>
 
-	<name>plugin-template-emoji parent</name>
+	<name>bookshop parent</name>
 
 	<properties>
 		<!-- OUR VERSION -->
@@ -17,7 +17,7 @@
 
 		<!-- DEPENDENCIES VERSION -->
 		<jdk.version>17</jdk.version>
-		<cds.services.version>4.4.1</cds.services.version>
+		<cds.services.version>4.4.0</cds.services.version>
 		<spring.boot.version>3.5.6</spring.boot.version>
 
 		<cds.install-node.downloadUrl>https://nodejs.org/dist/</cds.install-node.downloadUrl>
@@ -46,6 +46,12 @@
 				<version>${spring.boot.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>sap.capire</groupId>
+				<artifactId>plugin-template-emoji</artifactId>
+				<version>1.0.0-Snapshot</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -138,30 +144,6 @@
 							</rules>
 							<fail>true</fail>
 						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-
-			<!-- CHECKSTYLE -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>3.3.1</version>
-				<configuration>
-					<!-- Use Google's standard Java style guide -->
-					<configLocation>google_checks.xml</configLocation>
-					<encoding>UTF-8</encoding>
-					<consoleOutput>true</consoleOutput>
-					<failsOnError>true</failsOnError>
-					<linkXRef>false</linkXRef>
-				</configuration>
-				<executions>
-					<execution>
-						<id>validate</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>check</goal>
-						</goals>
 					</execution>
 				</executions>
 			</plugin>
