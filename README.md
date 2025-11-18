@@ -12,7 +12,6 @@ In case you are the maintainer of a new SAP open source project, these are the s
 - Add information about your project to this README (name, description, requirements etc). Especially take care for the <your-project> placeholders - those ones need to be replaced with your project name. See the sections below the horizontal line and [our guidelines on our wiki page](https://wiki.one.int.sap/wiki/pages/viewpage.action?pageId=3564976048#GuidelinesforGitHubHealthfiles(Readme,Contributing,CodeofConduct)-Readme.md) what is required and recommended.
 - Remove all content in this README above and including the horizontal line ;)
 
-***
 
 # Our new open source project
 
@@ -23,6 +22,35 @@ In case you are the maintainer of a new SAP open source project, these are the s
 ## Requirements and Setup
 
 *Insert a short description what is required to get your project running...*
+
+## Tests
+
+*Insert a short description how to run the test of your project.*
+
+
+### Testing the template with the sample application
+
+In `samples/bookshop` you can find a complete sample application that demonstrates how to use this template in a real CAP Java project. The sample is now a standalone project that shows realistic usage patterns.
+
+**Build and install the template**
+```zsh
+mvn clean install
+```
+
+**Run the sample application**
+```zsh
+cd samples/bookshop
+mvn clean package
+cds watch
+```
+
+The sample application includes:
+- Complete CAP service definitions
+- Java service handlers using the template
+- Fiori Elements UI
+- Sample data and tests
+
+For detailed instructions, see the [Sample Application README](samples/bookshop/README.md).
 
 ## Support, Feedback, Contributing
 
