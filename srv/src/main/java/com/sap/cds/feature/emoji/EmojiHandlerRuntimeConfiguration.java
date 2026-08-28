@@ -1,4 +1,4 @@
-package sap.capire.emoji_plugin;
+package com.sap.cds.feature.emoji;
 
 import com.sap.cds.services.runtime.CdsRuntimeConfiguration;
 import com.sap.cds.services.runtime.CdsRuntimeConfigurer;
