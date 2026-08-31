@@ -24,7 +24,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v6
 
       - name: Scan With Black Duck
         uses: cap-java/.github/actions/scan-with-blackduck@9fc20a42d6556aa4cab5fcfe0f58002aa4851103 # main
@@ -52,7 +52,7 @@ jobs:
       packages: read
     steps:
       - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v6
 
       - name: Scan With CodeQL
         uses: cap-java/.github/actions/scan-with-codeql@9fc20a42d6556aa4cab5fcfe0f58002aa4851103 # main
