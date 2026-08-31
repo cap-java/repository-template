@@ -6,7 +6,7 @@
 
 	<parent>
 		<artifactId>plugin-template-emoji-parent</artifactId>
-		<groupId>sap.capire</groupId>
+		<groupId>com.sap.cds</groupId>
 		<version>${revision}</version>
 	</parent>
 

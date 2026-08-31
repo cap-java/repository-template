@@ -49,7 +49,7 @@
 			</dependency>
 
 			<dependency>
-				<groupId>sap.capire</groupId>
+				<groupId>com.sap.cds</groupId>
 				<artifactId>plugin-template-emoji</artifactId>
 				<version>1.0.0-SNAPSHOT</version>
 			</dependency>
