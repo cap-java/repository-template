@@ -16,6 +16,7 @@ updates:
     directories:
       - "/"
       - "/tests/bookshop"
+      - "/samples/bookshop"
     schedule:
       interval: daily
     open-pull-requests-limit: 10
