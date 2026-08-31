@@ -1,4 +1,8 @@
-package sap.capire.emoji_plugin;
+package com.sap.cds.feature.emoji;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import com.sap.cds.Result;
 import com.sap.cds.reflect.CdsElement;
@@ -9,9 +13,6 @@ import com.sap.cds.services.cds.CqnService;
 import com.sap.cds.services.handler.EventHandler;
 import com.sap.cds.services.handler.annotations.After;
 import com.sap.cds.services.handler.annotations.ServiceName;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * Event handler that decorates fields annotated with @emoji by appending an emoji.
